@@ -1,0 +1,253 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: hsl(65, 92%, 5%);
+    background: #f3f4f6; /* Subtle background color */
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+    color: #eff0ea;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  /* Header Navigation */
+  header {
+    background: linear-gradient(90deg, #3ce942, #30e039);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgb(244, 248, 244);
+  }
+  
+  .nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInDown 1s ease-out;
+  }
+  
+  .nav-menu li {
+    margin: 0 15px;
+  }
+  
+  .nav-menu a {
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.2s, transform 0.1s;
+  }
+  
+  .nav-menu a:hover {
+    background: #388e3c;
+    transform: scale(1.1);
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/bcg.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: white;
+    padding: 150px 20px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    animation: slideInFromLeft 1.0s ease-out;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero button {
+    padding: 10px 25px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #ff9800;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.2s, transform 0.2s;
+  }
+  
+  .hero button:hover {
+    background-color: #e68a00;
+    transform: translateY(-3px);
+  }
+  
+  /* Section Styling */
+  section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgb(2, 255, 78);
+    margin-bottom: 30px;
+    animation: fadeInUp 1.5s ease-in-out;
+  }
+  
+  section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #01070c;
+  }
+  
+  section p, section li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #0f0101d8;
+  }
+  
+  section ul {
+    margin: 20px 0;
+  }
+  
+  section ul li {
+    margin: 10px 0;
+    position: relative;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  section ul li::before {
+    content: "✔";
+    color: #4caf50;
+    margin-right: 10px;
+  }
+  
+  /* Form Styling (Contact Page) */
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    background: #f8f8f6;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(245, 247, 245, 0.966);
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  form input, form textarea, form button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form input:focus, form textarea:focus {
+    border-color: #4caf50;
+    outline: none;
+  }
+  
+  form button {
+    background: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s, transform 0.1s;
+  }
+  
+  form button:hover {
+    background: #388e3c;
+    transform: scale(1.05);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #03111f75;
+    color: rgb(223, 210, 210);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Keyframe Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInFromLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero p {
+      font-size: 1.2rem;
+    }
+  
+    form input, form textarea {
+      font-size: 0.9rem;
+    }
+  }
+  
