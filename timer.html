@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditation Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <ul class="nav-menu">
+          <img src="/images/logo.jpg" alt="logo" height="90px" width="100px" style="position: absolute;top: 0;left: 0;">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="benefits.html">Benefits</a></li>
+          <li><a href="techniques.html">Techniques</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="timer.html">Meditation Timer</a></li>
+        </ul>
+      </header>
+    <div class="timer-container">
+        <p style="font-size: xx-large; text-align: center;">Meditation Timer</p>
+        <label for="timeInput">Enter duration (minutes):</label>
+        <input type="number" id="timeInput" placeholder="e.g., 5" min="1">
+        <button id="startTimer">Start Timer</button>
+        <div id="display">00:00</div>
+        <p id="completionMessage"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
